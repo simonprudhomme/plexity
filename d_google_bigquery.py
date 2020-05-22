@@ -8,9 +8,10 @@ def csv_to_bq(filename, dataset_id, table_id, overwrite=True, auto=True):
     """
     from google.cloud.bigquery import client
     from google.cloud import bigquery
-    import os
-    os.environ[
-        'GOOGLE_APPLICATION_CREDENTIALS'] = 'plex-analysis-2020-06d6109ad96a.json'
+    # import os
+    # os.environ[
+    #     'GOOGLE_APPLICATION_CREDENTIALS'] = 'plex-analysis-2020-06d6109ad96a.json'
+    #
     client = bigquery.Client()
     dataset_ref = client.dataset(dataset_id)
     table_ref = dataset_ref.table(table_id)

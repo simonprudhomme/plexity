@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "plex-analysis-2020",
+  "private_key_id": "06d6109ad96aa311bd3548dd6f1a9514392237ea",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDUAgI0+glhisdh\nET7xADbZOR47S8nMM3X/Zt+7rJ32xJipWoimNKbui637VKMV6urnCM0GhL4oatVi\nfw9oNmXoB15ayFZQSX8ZFAUqtnz4BELhCoXjLMsManwCYbghUExMy6i2GKrHh6Fm\nG6kmU9S/Yar28srdxlTOS3F95vpcYvyP+YJROWdGtQCDZOde5FSJBUinDG/4enYm\nfvsVqI0bzeY72Ugrpj2odgPVvRXhxx5IXCtW7HZU1G0Z8frskxsdBWXprqcbXgxP\nBvBWp3iDppcRXIIeFenmaiNcyB4YJkX12SNQPY6nqpWbuRSpQxkeI0Dqk1uNxjTH\nb3TfcN/1AgMBAAECggEAEhOpxIKdUifXIDusNjhidNsd7MhliHfK0+Adq47oWSYi\nLi5+AE30/doDF677yN6i8NgbQzcGT8PsNd3Hnock4Uffj7YNRgM+RxEh76ZnuW4D\nldSj3d7v4TsjH8DdRlnmZ5Xl6MDpruGtrVsmbRIwzbCyNyQ0j/xdNsnP/4A2ULIo\nPNmtsvH46k76P7dIpkKVGUb/uGJHlEnieAyxLSDc/gVsFQb0h/PJsYA2kHtb6WBh\nuvv3v15C/d+A9wYV6jGiDbmqsLhZ2Q3vFR+WJXBIwtyy+/LzeCd5jJGvC5TbfZSP\ni1EfEho1ccwskewmTMAmGYMoDQpW8B35nYwk+Th0AQKBgQDyD1M+zuPNYmVOzQR1\nxTs853R8FWS+4ghajmuL6CNhSAnrKGPRWG42LfIFnv6lFlI89hiNLcGpxQutmHCq\nTcq+snYs20A69Ts2LgnivQ2p6E8ddqUn2Tgib7va7C5xdLzQBqBx/L/xLvJftG2N\nVtQi/oQ+IXlCcN898SHutbtTQQKBgQDgN6DVKgXk1AHJmEDodWmIs+LZbLrvRmPf\nCHJNMXVQhz1hCLDy72y60jR1qS/arfCdXV1UtULhQ0EySahN29NYOxxOYyL9N+va\n78FY3mQyhF5amv567bASaSfLlriAut2W7M8ICfLqb6qKpvD+Nbv6oPAecn+eluee\nKoRiLvVDtQKBgQDB8O90ylUQ8P5UlcU2CxG8aYIWDRoMKpQg4i1fCl6Wih6QUGsx\nh1W+iS95u3sxkGHRwCfJrdiWCm+h5hqXCP8hrWEr7XtYAbYwYdC/31N8R8pjw/Tt\nqYflZ3qvHD7V3n+NeVHCIo0zU7cUYT7JWMFdTGluUmmSh1cGjRXv6aGuQQKBgQCA\nh2LqzuwSAHYF2gFbP/L/Kh8gA/QktXUKpQzgszlMsDm/JfxJRnZNobHwwMttz8fe\nbWbS6BUujB8TdKXF+/1q1nejd7DW9vd8yXNMPi+xxa9QwQif7yC/bQgi7INXR8c+\nfQEw2oMlYF2inZAIKUVYpmj/CyOdBWRAhp7cqY5vAQKBgQCugQoV1RMjjg+aa3xz\nOdjyq81e+me7Tdzm6eODWvulD37bMrFWrZgqmLD2VG5CLmJq4sUrhkv7cQ/U1oT+\nGF1eTa3doIckJ13mlqzlb9mqajtBfT+nYNihWRYzoOXBCXAn9h6O5YGx8CqeTXGC\nk78GdQxi1LZMJw+T0haOmYgZjA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "plex-analysis-2020@plex-analysis-2020.iam.gserviceaccount.com",
+  "client_id": "116869769976589763177",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/plex-analysis-2020%40plex-analysis-2020.iam.gserviceaccount.com"
+}

@@ -8,10 +8,8 @@ def csv_to_bq(filename, dataset_id, table_id, overwrite=True, auto=True):
     """
     from google.cloud.bigquery import client
     from google.cloud import bigquery
-    # import os
-    # os.environ[
-    #     'GOOGLE_APPLICATION_CREDENTIALS'] = 'plex-analysis-2020-06d6109ad96a.json'
-    #
+    import os
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'plex-analysis-2020-f83a7fba4dc7.json'
     client = bigquery.Client()
     dataset_ref = client.dataset(dataset_id)
     table_ref = dataset_ref.table(table_id)
@@ -38,15 +36,3 @@ def csv_to_bq(filename, dataset_id, table_id, overwrite=True, auto=True):
     job.result()  # Waits for table load to complete.
     print("Loaded {} rows into {}:{}.".format(job.output_rows, dataset_id, table_id))
     return
-
-
-def bq_to_csv(query):
-    from google.cloud.bigquery import client
-    from google.cloud import bigquery
-    import os
-    os.environ[
-        'GOOGLE_APPLICATION_CREDENTIALS'] = '/Users/simonprudhomme/Desktop/gcp_json_keys/maxi-price-1422fac585da.json'
-    client = bigquery.Client()
-    data = client.query(query).to_dataframe()
-    print("Loaded DataFrame size {}".format(data.shape))
-    return data

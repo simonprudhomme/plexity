@@ -5,6 +5,7 @@ from tqdm import tqdm
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 from bs4 import SoupStrainer
+from datetime import date, timedelta
 import json, os, re, time, unicodedata, requests
 import os
 
@@ -55,15 +56,26 @@ def get_urls():
         links = list(set(links))
         links = [i for i in links if 'plex' in i]
 
-        # Saved Urls in Csv File
+        # Saved Urls in links_total
         links_total = links_total + links
-        urls = pd.DataFrame(links_total, columns={'urls'})
-        urls = urls.drop_duplicates()
-        urls.to_csv('urls.csv', index=False)
 
         # Go on Next Page
         driver.find_element_by_xpath('/html/body/main/div[6]/div/div/div[1]/div/div/ul/li[4]/a').click()
         time.sleep(2)
+
+    urls_today = pd.DataFrame(links_total, columns={'urls'})
+    urls_today = urls_today.drop_duplicates()
+    urls_today.to_csv('urls_today.csv', index=False)
+    urls_today['date'] = str(date.today())
+
+    urls_yesterday = pd.read_csv('urls_yesterday.csv')
+
+    urls_to_get = pd.DataFrame(list(set(urls_yesterday['urls']) - set(urls_today['urls'])), columns={'urls'})
+    urls_to_get.to_csv('urls_to_get.csv', index=False)
+
+    urls_yesterday = pd.concat([urls_to_get,urls_yesterday],axis=0).reset_index()
+    urls_yesterday.to_csv('urls_yesterday.csv',index=False)
+
     driver.quit()
     return
 
@@ -119,7 +131,8 @@ def get_data(url):
 
 
 def run_get_data():
-    urls = pd.read_csv('urls.csv')
+    urls = pd.read_csv('urls_to_get.csv')
+
     print(urls.shape)
     urls = urls.drop_duplicates()
     urls['urls'] = 'https://www.centris.ca' + urls['urls']

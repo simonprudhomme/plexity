@@ -24,8 +24,11 @@ def job():
 
 # #2. Run job
 # Run job evey day
-schedule.every().day.at("01:00").do(job,'It is 01:00')
+#schedule.every().day.at("01:00").do(job,'It is 01:00')
 
-while True:
-    schedule.run_pending()
-    time.sleep(1) # wait one minute
+#while True:
+#    schedule.run_pending()
+#    time.sleep(1) # wait one minute
+#job()
+
+main_calculation_and_upload()

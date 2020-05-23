@@ -95,7 +95,7 @@ def upload_data():
     print('Upload de la base de donnees sur Bigquery')
     dataset_id = 'plex'
     table_id = 'today_plexes'
-    csv_to_bq('data_clean.csv', dataset_id, table_id, overwrite=True, auto=True)
+    csv_to_bq('data_clean.csv', dataset_id, table_id, overwrite=False, auto=True)
 
 
 #2. main_calculation_and_upload
